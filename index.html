@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music all at one place</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+       
+        <div class="songlist">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/Speak_Now.png" alt="1">
+                    <span class="songName">Back to December</span>
+                    <span class="songlistplay"><span class="timestamp">04:54 <i style="padding-left: 5px;" id="1" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Cruel_Summer.jpg" alt="1">
+                    <span class="songName">Cruel Summer</span>
+                    <span class="songlistplay"><span class="timestamp">02:59 <i style="padding-left: 5px;" id="2" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/1989.png" alt="1">
+                    <span class="songName">Blank Space</span>
+                    <span class="songlistplay"><span class="timestamp">03:52 <i style="padding-left: 5px;" id="3" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Fearless.jpeg" alt="1">
+                    <span class="songName">You Belong With Me</span>
+                    <span class="songlistplay"><span class="timestamp">03:51 <i style="padding-left: 5px;" id="4" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Midnights.png" alt="1">
+                    <span class="songName">Maroon</span>
+                    <span class="songlistplay"><span class="timestamp">03:42 <i style="padding-left: 5px;" id="5" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Saware.jpeg" alt="1">
+                    <span class="songName">Saware</span>
+                    <span class="songlistplay"><span class="timestamp">05:21 <i style="padding-left: 5px;" id="6" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Subhanallah.jpg" alt="1">
+                    <span class="songName">Subhanallah</span>
+                    <span class="songlistplay"><span class="timestamp">04:09 <i style="padding-left: 5px;" id="7" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Midnights.png" alt="1">
+                    <span class="songName">Midnight Rain</span>
+                    <span class="songlistplay"><span class="timestamp">02:54 <i style="padding-left: 5px;" id="8" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Midnights.png" alt="1">
+                    <span class="songName">Anti-Hero</span>
+                    <span class="songlistplay"><span class="timestamp">03:20 <i style="padding-left: 5px;" id="9" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Kahani_Suno.jpg" alt="1">
+                    <span class="songName">Kahani Suno 2.0</span>
+                    <span class="songlistplay"><span class="timestamp">02:53 <i style="padding-left: 5px;" id="10" class="songItemPlay fa-solid fa-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons  -->
+            <i id="previous" class="fa-solid fa-3x fa-backward-step"></i>
+            <i class="fa-solid fa-3x fa-play" id="masterPlay"></i>
+            <i id="next" class="fa-solid fa-3x fa-forward-step"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" id="gif" width="42px" alt=""> <span id="masterSongName">Back to December</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d2cc4ecf9a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
