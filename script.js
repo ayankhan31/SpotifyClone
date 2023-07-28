@@ -99,6 +99,17 @@ document.getElementById('next').addEventListener('click', ()=>{
     masterPlay.classList.add('fa-pause');
 })
 
+const volumeSlider = document.getElementById('volumeSlider');
+const audioPlayer = audioElement;
+// Set the initial volume based on the slider value
+audioPlayer.volume = volumeSlider.value;
+
+// Add an event listener to the range input
+volumeSlider.addEventListener('input', function() {
+  // Update the audio volume when the user adjusts the slider
+  audioPlayer.volume = volumeSlider.value;
+});
+
 document.getElementById('previous').addEventListener('click', ()=>{
     if(songIndex<=1){
         songIndex = 1;
